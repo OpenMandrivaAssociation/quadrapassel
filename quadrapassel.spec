@@ -1,8 +1,9 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
+%define _disable_rebuild_configure 1
 
 Name:		quadrapassel
-Version:	3.16.0
-Release:	3
+Version:	3.18.0
+Release:	1
 Summary:	GNOME Quadrapassel game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Arcade
@@ -40,7 +41,7 @@ The Russian game of falling geometric shapes.
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
-%{_iconsdir}/*/*/apps/%{name}.*
+%{_iconsdir}/*/*/apps/%{name}*.*
 %{_datadir}/%{name}
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/appdata/%{name}.appdata.xml
