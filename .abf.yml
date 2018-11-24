@@ -1,4 +1,5 @@
 removed_sources:
   quadrapassel-3.14.0.tar.xz: c7927b7cb372cdc5ea0e7f1edb58fdad533a6ea1
-sources:
   quadrapassel-3.16.0.tar.xz: 45d3cbef5c9b1f91b8dc6699cd897e99caaaec4d
+sources:
+  quadrapassel-3.22.0.tar.xz: f6ef202edbc8952560dbf9cafc772aca04448a4c
