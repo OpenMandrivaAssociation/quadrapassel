@@ -18,6 +18,7 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:  meson
+BuildRequires:  vala
 Obsoletes: gnome-games-quadrapassel < 1:3.7.92
 # For help
 Requires:	yelp
