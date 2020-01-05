@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		quadrapassel
-Version:	3.22.0
+Version:	3.34.1
 Release:	1
 Summary:	GNOME Quadrapassel game
 License:	GPLv2+ and CC-BY-SA
@@ -14,9 +14,15 @@ BuildRequires:	pkgconfig(clutter-gtk-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
+BuildRequires:  librsvg-vala-devel
+BuildRequires:  pkgconfig(gsound)
+BuildRequires:  pkgconfig(manette-0.2)
+BuildRequires:  cmake
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:  meson
+BuildRequires:  vala
 Obsoletes: gnome-games-quadrapassel < 1:3.7.92
 # For help
 Requires:	yelp
@@ -28,21 +34,21 @@ The Russian game of falling geometric shapes.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
-%{_iconsdir}/*/*/apps/%{name}*.*
+%{_datadir}/applications/org.gnome.Quadrapassel.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.Quadrapassel.gschema.xml
+%{_iconsdir}/*/*/apps/org.gnome.Quadrapassel*.*
 %{_datadir}/%{name}
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/metainfo/org.gnome.Quadrapassel.appdata.xml
 
