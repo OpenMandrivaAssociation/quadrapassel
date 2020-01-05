@@ -15,6 +15,7 @@ BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  pkgconfig(gsound)
+BuildRequires:  pkgconfig(manette-0.2)
 BuildRequires:  cmake
 BuildRequires:	intltool
 BuildRequires:	itstool
