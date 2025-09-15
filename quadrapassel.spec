@@ -52,7 +52,7 @@ The Russian game of falling geometric shapes.
 %{_datadir}/applications/org.gnome.Quadrapassel.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.Quadrapassel.gschema.xml
 %{_iconsdir}/*/*/apps/org.gnome.Quadrapassel*.*
-%{_datadir}/%{name}
+#{_datadir}/%{name}
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/metainfo/org.gnome.Quadrapassel.appdata.xml
+%{_datadir}/metainfo/org.gnome.Quadrapassel.metainfo.xml
 
