@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  librsvg-vala-devel
 BuildRequires:  pkgconfig(gsound)
 BuildRequires:  pkgconfig(manette-0.2)
+BuildRequires:  pkgconfig(blueprint-compiler)
 BuildRequires:  cmake
 BuildRequires:	intltool
 BuildRequires:	itstool
