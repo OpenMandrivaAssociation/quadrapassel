@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		quadrapassel
-Version:	49.0
+Version:	49.1
 Release:	1
 Summary:	GNOME Quadrapassel game
 License:	GPLv2+ and CC-BY-SA
