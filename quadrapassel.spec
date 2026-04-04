@@ -2,10 +2,10 @@
 %define _disable_rebuild_configure 1
 
 Name:		quadrapassel
-Version:	49.2.3
+Version:	50.0.1
 Release:	1
 Summary:	GNOME Quadrapassel game
-License:	GPLv2+ and CC-BY-SA
+License:	GPLv3 and CC-BY-SA
 Group:		Games/Arcade
 URL:		https://wiki.gnome.org/Quadrapassel
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
@@ -20,11 +20,13 @@ BuildRequires:  librsvg-vala-devel
 BuildRequires:  pkgconfig(gsound)
 BuildRequires:  pkgconfig(manette-0.2)
 BuildRequires:  pkgconfig(blueprint-compiler)
+BuildRequires:  pkgconfig(sndfile)
+BuildRequires:  pkgconfig(openal)
 BuildRequires:  desktop-file-utils
 BuildRequires:  cmake
 BuildRequires:	intltool
 BuildRequires:	itstool
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:  meson
 BuildRequires:  vala
 Obsoletes: gnome-games-quadrapassel < 1:3.7.92
