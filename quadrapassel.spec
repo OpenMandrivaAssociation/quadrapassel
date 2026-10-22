@@ -3,7 +3,7 @@
 
 Name:		quadrapassel
 Version:	51.1
-Release:	1
+Release:	2
 Summary:	GNOME Quadrapassel game
 License:	GPLv3 and CC-BY-SA
 Group:		Games/Arcade
